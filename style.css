@@ -1,0 +1,329 @@
+/* Last updated: 25th March 2022 */
+
+/* ----------------- */
+/*       BODY        */
+/* ----------------- */
+
+/* General */
+body {
+  background-color: rgb(245, 245, 250);
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+}
+
+/* ----------------- */
+/*   LOGO + NAVBAR   */
+/* ----------------- */
+
+/* header */
+.header {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+  margin: 2rem;
+  
+  padding: 10px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+            -0px -1px 2px -0px rgba(0, 0, 0, 0.06);
+
+}
+
+.logo p {
+  color: aqua;
+}
+
+#logo-letter {
+    border-right: blue 2px solid;
+}
+
+
+/* NAV-TABS */
+.header .nav-tabs {
+    position: relative;
+    display: flex;
+    list-style: none;
+    margin: 2rem;
+
+    padding: 15px;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+                -0px -1px 2px -0px rgba(0, 0, 0, 0.06);
+
+                
+}
+
+.header .nav-tabs a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+
+.header .nav-tabs .nav-link {
+  margin-inline-end: 1em;
+}
+
+.header .nav-tabs a > span {
+  font-weight: 700;
+  margin-inline-end: 0.2em;
+}
+
+.header .nav-tabs a:hover {
+  color: rgb(121, 121, 144);
+}
+
+.header .nav-tabs a.selected {
+    color: rgb(70, 70, 135);
+}
+
+@media (min-width: 39em) {
+    .header .nav-tabs a.selected {
+        color: rgb(70, 70, 135);
+        
+        padding: 8px;
+        border-radius: 12px;
+        background: rgb(238, 238, 244);
+        box-shadow: inset 1px 1px 0.5px #a1a1a1,
+                    inset -2px -2px 1.5px #ffffff;
+    }
+    
+}
+
+
+/* ----------------- */
+/*   toggle-button   */
+/* ----------------- */
+.header .toggle-button {
+    position: absolute;
+    top: 2em;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.5rem;
+    height: 1rem;
+    z-index: 1000;
+
+    padding: 15px;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+              -0px -1px 2px -0px rgba(0, 0, 0, 0.06);
+}
+
+.header .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+/* ----------------- */
+/*    NAV MOBILE     */
+/* ----------------- */
+@media (max-width: 36em) {
+    .header .toggle-button {
+        display: flex;
+    }
+
+    .header .nav-tabs {
+        display: none;
+        position: absolute;
+        inset: 0 0 0 30%;
+
+        flex-direction: column;
+        padding-top: min(25vh, 5em);
+        padding-left: 2em;
+        padding-bottom: min(40vh, 15em);
+    }
+
+    .header .nav-tabs.active {
+        display: flex;
+    }
+
+    .header .toggle-button.selected{
+        position: absolute;
+        top: 3em;
+        right: 3rem;
+    
+        padding: 15px;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: inset 4px 4px 3px #a1a1a1,
+                    inset -4px -4px 3px #ffffff;
+    }
+
+    .title-textbox {
+        z-index: -1;
+      }
+}
+
+
+
+/* ----------------- */
+/*      FOOTER      */
+/* ----------------- */
+
+.footer-textbox {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10em;
+    margin-right: 10rem;
+}
+
+.footer-textbox .section {
+    color: black;
+    padding: 2em;
+    text-align: left;
+    width: 8em
+}
+
+.footer-textbox .section h4 {
+    color: black;
+    font-size: 20px;
+    font-family: "Source Sans Pro";
+}
+
+.footer-textbox .section h5 {
+    color: black;
+    font-size: 18px;
+    font-family: "Source Sans Pro";
+}
+
+
+.footer-textbox .section a {
+    text-decoration: none;
+    color: black;
+    font-family: "Source Sans Pro";
+}
+
+.footer-textbox .section a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+
+/*  footer mobile  */
+@media (max-width: 36em) {
+    .footer-textbox {
+        flex-direction: column;
+        margin-top: 2em;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+/* ------------------------ */
+/* HOMEPAGE CONTENT: title  */
+/* ------------------------ */
+
+.title-textbox {
+    position: relative;
+    margin: 8em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.title-textbox #box {
+    color: rgb(70, 70, 135);
+    min-width: fit-content;
+}
+
+.title-textbox aside {
+    height: 2rem;
+    width: 20rem;
+    flex-shrink: 1;
+}
+  
+.title-textbox h1 {
+    font-family: "Julius Sans One";
+    font-size: 3.75em;
+  }
+  
+.title-textbox h2 {
+    font-size: 1.75em;
+    font-family: "Archivo Narrow";
+  }
+  
+.title-textbox p {
+    font-size: 1em;
+    font-family: "Source Sans Pro";
+  }
+
+
+/* --------------------------- */
+/*  HOMEPAGE CONTENT: emner  */
+/* --------------------------- */
+.content-emner {
+    margin-top: 5em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.content-emner .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.content-emner .box {
+    width: 25%;
+    min-width: 15%;
+    aspect-ratio: 1;
+    justify-content: space-around;
+    margin: 2em;
+
+    padding: 15px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+              -0px -1px 2px -0px rgba(0, 0, 0, 0.06);
+  
+     
+}
+
+.content-emner h2 {
+    text-align: center;
+    font-size: 1.75em;
+    font-family: "Archivo Narrow";
+  }
+  
+.content-emner p {
+    text-align: justify;   
+    font-size: 1em;
+    font-family: "Source Sans Pro";
+  }
+
+
+/* --------------------------- */
+/*  HOMEPAGE CONTENT: om oss   */
+/* --------------------------- */
+.content-about {
+    margin-top: 5em;
+    margin-bottom: 3em;
+
+    
+}
+
+.content-about details {
+    padding: 4rem;
+    margin-left: 6em;
+}
+
+
+
