@@ -263,6 +263,21 @@ body {
   }
 
 
+@media (max-width: 35em) {
+     
+.title-textbox h1 {
+    font-family: "Julius Sans One";
+    font-size: 3em;
+  }
+  
+.title-textbox h2 {
+    font-size: 1em;
+    font-family: "Archivo Narrow";
+  }
+
+}
+
+
 /* --------------------------- */
 /*  HOMEPAGE CONTENT: emner  */
 /* --------------------------- */
