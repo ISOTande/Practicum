@@ -1,5 +1,6 @@
 <!-- Last updated:  25th March 2022 -->
 
+
 <!DOCTYPE html>
 
 <html>
@@ -10,7 +11,113 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* --------------------------- */
+      /*  HOMEPAGE CONTENT: emner  */
+      /* --------------------------- */
+      .content-emner {
+          margin-top: 10em;
+          margin-bottom: 3em;
+          text-align: center;
+
+          border: red 1px solid;
+
+      }
+
+      .content-emner .boxes {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-left: 4em;
+          margin-right: 4em;
+
+          border: blue 1px solid;
+      }
+
+      .content-emner .box {
+          width: 25%;
+          min-width: 15%;
+          aspect-ratio: 1;
+          justify-content: space-around;
+          margin: 2em;
+
+          padding: 15px;
+          border-radius: 20px;
+          background: #ffffff;
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+                    -0px -1px 2px -0px rgba(0, 0, 0, 0.06);
+        
+          
+      }
+
+      .content-emner #buttonbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 1rem;
+
+        border: green 1px solid;
+      }
+
+      .content-emner #button {
+        width: fit-content;
+        height: 2rem;
+
+        font-size: 1rem;
+        text-decoration: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 15px;
+        border-radius: 20px;
+        background: #ffffff;
+        box-shadow: 0px 0.1px 0.3px 0px rgba(87, 87, 87, 0.1),
+                    -0px -0.1px 0.2px -0px rgba(87, 87, 87, 0.06);
+      }
+
+      .content-emner #button a {
+        font-size: 1rem;
+        text-decoration: none;  
+        color: black;
+      }
+
+      .content-emner #button a:hover {
+        color: rgb(121, 121, 144);
+      }
+
+      @media (max-width: 35em) {
+          .content-emner .box {
+              width: 100%;
+              margin-left: 0.25rem;
+              margin-right: 0.25rem;
+          }
+      }
+
+      .content-emner h2 {
+          text-align: center;
+          font-size: 1.75em;
+          font-family: "Archivo Narrow";
+        }
+        
+      .content-emner p {
+          text-align: justify;   
+          font-size: 1em;
+          font-family: "Source Sans Pro";
+        }
+
+
+      /* --------------------------- */
+      /*  HOMEPAGE CONTENT: price    */
+      /* --------------------------- */
+
+    </style>
   </head>
+
+
 
   <!-- START HOMEPAGE -->
   <body>
@@ -35,10 +142,10 @@
             <a href="index.html" class="selected"> <span> 00 </span> Home </a>
           </li>
           <li class="nav-link">
-            <a href="index.html"> <span> 01 </span> Emneoversikt </a>
+            <a href="Emneoversikt.html"> <span> 01 </span> Emneoversikt </a>
           </li>
           <li class="nav-link">
-            <a href="index.html"> <span> 02 </span> Om </a>
+            <a href="about.html"> <span> 02 </span> Om </a>
           </li>
           <li class="nav-link">
             <a href="index.html"> <span> 03 </span> Pris </a>
@@ -54,16 +161,21 @@
         <div id="box">
             <h2>catchphrase</h2>
             <h1>PRACTICUM</h1>
-            <br />
+            <br/>
             <p>THIS IS SOME TEXT</p>
         </div>
         <aside></aside>
     </div>
     <!-- END content: title -->
 
-    <!-- START content:  -->
+
+
+    <!---------------------->
+    <!-- START content: om emene -->
     <div class="content-emner">
-      <div><h2>subtitle h2</h2></div>
+      <div>
+        <h2> subtitle h2 </h2>
+      </div>
       <div class="boxes">
         <div class="box">
           <h3>Teori</h3>
@@ -92,26 +204,22 @@
           </p>
         </div>
       </div>
+      <div id="buttonbox">
+        <div id="button">
+          <a href="Emneoversikt.html"> se emneoversikt </a>
+        </div>
+      </div>
     </div>
 
-    <div class="content-about">
-        <details>
-            <summary>
-                <h2>Om oss</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                    aliquip ex ea commodo consequat. 
-                </p> 
-            </summary>
-        </details>
+    <!--------------->
+    <div class="price">
+      
     </div>
 
-    <div class="content">
-      <h2>subtitle h2</h2>
-      <p>lorem ipsum dolores</p>
-    </div>
+
+
+
+
 
     <!-- START footer -->
     <footer>
@@ -152,3 +260,4 @@
     </script>
   </body>
 </html>
+
