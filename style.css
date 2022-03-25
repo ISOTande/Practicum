@@ -262,12 +262,11 @@ body {
     font-family: "Source Sans Pro";
   }
 
-
 @media (max-width: 35em) {
      
 .title-textbox h1 {
     font-family: "Julius Sans One";
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
   
 .title-textbox h2 {
@@ -312,6 +311,14 @@ body {
      
 }
 
+@media (max-width: 35em) {
+    .content-emner .box {
+        width: 100%;
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+    }
+}
+
 .content-emner h2 {
     text-align: center;
     font-size: 1.75em;
@@ -339,6 +346,7 @@ body {
     padding: 4rem;
     margin-left: 6em;
 }
+
 
 
 
