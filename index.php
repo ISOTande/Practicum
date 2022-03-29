@@ -121,6 +121,9 @@
 
   <!-- START HOMEPAGE -->
   <body>
+    <?php
+    echo "<p>Some text </p>";
+    ?>
     <!-- START header (logo, nav) -->
     <header class="header">
       <!-- LOGO img -->
@@ -259,5 +262,6 @@
         })
     </script>
   </body>
+  
 </html>
 
