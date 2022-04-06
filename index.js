@@ -9,3 +9,6 @@ navToggle.addEventListener("click", function() {
 navToggle.addEventListener("click", function() {
     navToggle.classList.toggle("selected")
 })
+
+
+// searchBar
