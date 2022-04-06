@@ -1,6 +1,3 @@
-<!-- Last updated:  25th March 2022 -->
-
-
 <!DOCTYPE html>
 
 <html>
@@ -11,108 +8,197 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
     <style>
       /* --------------------------- */
-      /*  HOMEPAGE CONTENT: emner  */
-      /* --------------------------- */
-      .content-emner {
-          margin-top: 10em;
-          margin-bottom: 3em;
-          text-align: center;
-
-          border: red 1px solid;
-
-      }
-
-      .content-emner .boxes {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap;
-          margin-left: 4em;
-          margin-right: 4em;
-
-          border: blue 1px solid;
-      }
-
-      .content-emner .box {
-          width: 25%;
-          min-width: 15%;
-          aspect-ratio: 1;
-          justify-content: space-around;
-          margin: 2em;
-
-          padding: 15px;
-          border-radius: 20px;
-          background: #ffffff;
-          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
-                    -0px -1px 2px -0px rgba(0, 0, 0, 0.06);
-        
-          
-      }
-
-      .content-emner #buttonbox {
+      /*    HOMEPAGE > frontpage     */
+      /* ---------------------------s */
+      .frontpage {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        margin: 1rem;
+        margin: 2rem 1rem 1rem 1rem;
 
-        border: green 1px solid;
+        /* border: orange solid 1px; */
       }
 
-      .content-emner #button {
-        width: fit-content;
-        height: 2rem;
 
-        font-size: 1rem;
-        text-decoration: none;
+      /* TITLE */
+    .frontpage #textbox {
+      /* border: blue 1px solid; */
+      margin: 2rem;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        padding: 15px;
-        border-radius: 20px;
-        background: #ffffff;
-        box-shadow: 0px 0.1px 0.3px 0px rgba(87, 87, 87, 0.1),
-                    -0px -0.1px 0.2px -0px rgba(87, 87, 87, 0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0.5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+
+
+    @media (min-width: 40rem) {
+      .frontpage #textbox {
+        height: 25rem;
       }
+    }
 
-      .content-emner #button a {
-        font-size: 1rem;
-        text-decoration: none;  
-        color: black;
-      }
+    /* BUTTON */
+    .button a {
+      font-family:'Josefin sans';
+      text-decoration: none;
+      color: #444;
+    }
 
-      .content-emner #button a:hover {
-        color: rgb(121, 121, 144);
-      }
+    .button {
+      margin: 4rem auto 1rem auto;
+      padding: 1rem 1.75rem;
 
-      @media (max-width: 35em) {
-          .content-emner .box {
-              width: 100%;
-              margin-left: 0.25rem;
-              margin-right: 0.25rem;
-          }
-      }
+      border: none;
+      border-radius: 4rem;
 
-      .content-emner h2 {
-          text-align: center;
-          font-size: 1.75em;
-          font-family: "Archivo Narrow";
-        }
-        
-      .content-emner p {
-          text-align: justify;   
-          font-size: 1em;
-          font-family: "Source Sans Pro";
-        }
+      width: fit-content;
+
+      background: #ffffff;
+      color: #444;
+      font-size: 1rem;
+      letter-spacing: .2rem;
+      text-align: center;
+      outline: none;
+      cursor: pointer;
+      transition: .2s ease-in-out;
+      box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+                  -6px -6px 10px rgba(255, 255, 255, .5),
+                  6px 6px 8px rgba(255, 255, 255, .075),
+                  6px 6px 10px rgba(0, 0, 0, .15);
+                  
+    }
+
+    .button:hover {
+      box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+                  -2px -2px 4px rgba(255, 255, 255, .4),
+                  2px 2px 2px rgba(255, 255, 255, .05),
+                  2px 2px 4px rgba(0, 0, 0, .1);
+    }
+    
+    .button a:hover {
+      color: rgb(150, 0, 0);
+    }
+
+    .button:active {
+      box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+                  inset -2px -2px 4px rgba(255, 255, 255, .5),
+                  inset 2px 2px 2px rgba(255, 255, 255, .075),
+                  inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
 
 
-      /* --------------------------- */
-      /*  HOMEPAGE CONTENT: price    */
-      /* --------------------------- */
+/* ------------- */
+/*   Services    */
+/* ------------- */
+
+#services-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1rem;
+
+  /* border: red 1px solid; */ 
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1rem 3rem;
+
+  /* border: blue 1px solid; */
+}
+
+.container-wrapper .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 0.75rem;
+
+  margin: 2rem;
+
+  /* border: green 1px solid; */
+}
+
+.container:hover {
+  box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001;
+}
+
+
+.icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+
+  margin: 0.5rem;
+  padding: 0.25rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001,
+        inset 0px 0px 0px 0px #fff9,
+        inset 0px 0px 0px 0px #0001;
+  transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  font-size: 16px;
+  color: rgba(42, 52, 84, 1);
+}
+
+
+
+/*  services mobile  */
+@media (max-width: 55rem) {
+    .container-wrapper {
+        flex-direction: column; 
+    }
+
+    .container-wrapper .container {
+      text-align: center;
+      justify-items: center;
+  }
+}
+
 
     </style>
   </head>
@@ -120,13 +206,19 @@
 
 
   <!-- START HOMEPAGE -->
-  <body>
-    <!-- START header (logo, nav) -->
+  <body> 
+    <!-- START background -->
+    <div class="bg-canvas">
+      <div class="bg-overlay">
+        <!-- START header (logo, nav) -->
     <header class="header">
       <!-- LOGO img -->
-      <div class="logo">
-        <img src="./assets/logo.png" alt="" height="60" width="60" />
-      </div>
+        <div class="logo-circle">
+          <div id="logo"> 
+            <p> P. </p>
+          </div>
+        </div>  
+
       
       <!-- toggle-button -->
       <a href="#" class="toggle-button">
@@ -139,16 +231,27 @@
       <nav>
         <ul class="nav-tabs">
           <li class="nav-link">
-            <a href="index.html" class="selected"> <span> 00 </span> Home </a>
+            <a href="index.html" class="selected"> <span> <i class="fa-regular fa-home" style="color:#444"></i> </span> HOME </a>
           </li>
           <li class="nav-link">
-            <a href="Emneoversikt.html"> <span> 01 </span> Emneoversikt </a>
+            <a href="#"> <span> <i class="fa-regular fa-book" style="color:#444"></i> </span> EMNEOVERSIKT </a>
+            <div class="dropdown">
+                <a href="index.html"> ALLE EMNER </a>
+                <a href="index.html"> OPPGAVESAMLING </a>
+                <!-- Arveplanlegger - testament, fremtidsfullmaklt og arvekalkulator? -->
+                <a href="index.html"> RESSURSER </a>
+            </div>
+          </li>
+
+          <li class="nav-link">
+            <a href="index.html"> <span> <i class="fa-regular fa-ellipsis-vertical" style="color:#444"></i> </span> DIVERSE </a>
+            <div class="dropdown">
+                <a href="link.html"> PRIS </a>
+                <a href="brukervilkaar.html"> BRUKERVILKÅR </a>
+            </div>
           </li>
           <li class="nav-link">
-            <a href="about.html"> <span> 02 </span> Om </a>
-          </li>
-          <li class="nav-link">
-            <a href="index.html"> <span> 03 </span> Pris </a>
+            <a href="index.html">  <span> <i class="fa-regular fa-user" style="color:#444"></i> </span> LOG IN </a>
           </li>
         </ul>
       </nav>
@@ -156,79 +259,67 @@
     </header>
     <!-- END header -->
 
+
     <!-- START content: title -->
-    <div class="title-textbox">
-        <div id="box">
-            <h2>catchphrase</h2>
-            <h1>PRACTICUM</h1>
-            <br/>
-            <p>THIS IS SOME TEXT</p>
+    <div class="frontpage">
+        <div>
+          <div id="textbox">
+            <h1> PRACTICUM <h1>
+            <p> Juridisk teori <br> & <br> oppgavesamling </p>
+            <div class="button">
+              <a href="index.html"> STUDY </a>
+            </div>
         </div>
-        <aside></aside>
+        </div>
     </div>
     <!-- END content: title -->
 
-
-
-    <!---------------------->
-    <!-- START content: om emene -->
-    <div class="content-emner">
+    <!-- START homepage -->
+    <div id="services-info">
       <div>
-        <h2> subtitle h2 </h2>
-      </div>
-      <div class="boxes">
-        <div class="box">
-          <h3>Teori</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div class="box">
-          <h3>Oppgavesmaling</h3>
-          <p>
-              Praktikumsoppgaver og teorioppgaver med løsningsforslag 
-              <br>
-              <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div class="box">
-          <h3>Annet</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-      <div id="buttonbox">
-        <div id="button">
-          <a href="Emneoversikt.html"> se emneoversikt </a>
+        <div class="container-wrapper">
+          <div class="container">
+            <span class="icon">
+              <i class="fa-solid fa-section fa-lg" style="color: rgb(212, 130, 130)"></i>
+            </span>
+            <h3> teori </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Etiam sed maximus lacus.Nullam id sodales dolor, non vehicula diam.
+            </p>
+          </div>
+          <div class="container">
+            <span class="icon">
+              <i class="fa-solid fa-pencil fa-lg" style="color: rgb(97, 140, 220)"></i>
+            </span>
+            <h3> oppgavesamling </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Etiam sed maximus lacus.Nullam id sodales dolor, non vehicula diam.
+            </p>
+          </div>
+          <div class="container">
+            <span class="icon">
+              <i class="fa-solid fa-folder-closed fa-lg" style="color: rgb(64, 129, 120)"></i>
+            </span>
+            <h3> ressurser </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Etiam sed maximus lacus.Nullam id sodales dolor, non vehicula diam.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-
-    <!--------------->
-    <div class="price">
-      
-    </div>
-
-
-
-
+    <!-- END homepage -->
 
 
     <!-- START footer -->
     <footer>
-      <div class="footer-textbox">
+      <div class="footer-grid">
         <div class="section">
-            <h4> Practicum. </4>
-                <h5> by ISO </h5>
-                <br>
-                <p> social media icons? </p>
+          <h4> PRACTICUM </4>
+          <h5> by ISO </h5>
         </div>
         <div class="section">
             <h4> Kontakt </h4>
@@ -238,15 +329,32 @@
           </div>
           <div class="section">
             <h4> Linker </h4>
-            <a href="FAQ.html"> FAQ </a>
-            <p> link2 </p>
-            <p> link3 </p>
+            <p> <a href="FAQ.html"> faq </a> </p>
+            <p> <a href="about.html"> about </a> </p>
+            <!-- <p> <a href="joinus.html"> Join us </a> </p> -->
+
+            <!-- Social media buttons -->
+            <br>
+            <div class ="frame">
+              <a href="#" class="btn">
+                <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+              </a>
+              <a href="#" class="btn">
+                <i class="fab fa-instagram" style="color: #d64dd6;"></i>
+              </a>
+              <a href="#" class="btn">
+                <i class="fab fa-linkedin-in" style="color:#0e76a8;"></i>
+              </a>
+              <a href="#" class="btn">
+                <i class="far fa-envelope"></i>
+              </a>
+            </div>
         </div>
-      </div>
     </footer>
 
-    <!-- JS for nav-bar toggle-button -->
+    <!-- JS start -->
     <script>
+      // toggle-button navbar
         const navbar = document.getElementsByClassName("nav-tabs")[0]
         const navToggle = document.getElementsByClassName("toggle-button")[0]
 
@@ -257,8 +365,21 @@
         navToggle.addEventListener("click", function() {
             navToggle.classList.toggle("selected")
         })
-    </script>
-  </body>
-  
-</html>
 
+
+        // auto scroll with delay
+        // window.onload = function delayedAutoScroll() => {
+        //  var el = document.getElementsByClassName('services-info')
+             
+        // }
+
+        // let timer = setTimeout(delayedAutoScroll, 6000);
+
+
+        // BACKGROUND BUBBLES
+    </script>
+      </div>
+    </div>
+    
+  </body>
+</html>
