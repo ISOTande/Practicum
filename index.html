@@ -7,7 +7,7 @@
     <title> Practicum > Home </title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
     <style>
       /* --------------------------- */
@@ -46,7 +46,7 @@
 
     p {
       font-size: 1.5rem;
-      line-height: 1.5rem;
+      line-height: 2rem;
     }
 
 
@@ -207,13 +207,10 @@
 
   <!-- START HOMEPAGE -->
   <body> 
-    <!-- START background -->
-    <div class="bg-canvas">
-      <div class="bg-overlay">
-        <!-- START header (logo, nav) -->
+    <!-- START header (logo, nav) -->
     <header class="header">
       <!-- LOGO img -->
-        <div class="logo-circle">
+      <div class="logo-circle">
           <div id="logo"> 
             <p> P. </p>
           </div>
@@ -231,10 +228,10 @@
       <nav>
         <ul class="nav-tabs">
           <li class="nav-link">
-            <a href="index.html" class="selected"> <span> <i class="fa-regular fa-home" style="color:#444"></i> </span> HOME </a>
+            <a href="index.html" class="selected"> HOME </a>
           </li>
           <li class="nav-link">
-            <a href="#"> <span> <i class="fa-regular fa-book" style="color:#444"></i> </span> EMNEOVERSIKT </a>
+            <a href="#"> EMNEOVERSIKT </a>
             <div class="dropdown">
                 <a href="index.html"> ALLE EMNER </a>
                 <a href="index.html"> OPPGAVESAMLING </a>
@@ -244,14 +241,19 @@
           </li>
 
           <li class="nav-link">
-            <a href="index.html"> <span> <i class="fa-regular fa-ellipsis-vertical" style="color:#444"></i> </span> DIVERSE </a>
+            <a href="index.html">  </span> DIVERSE </a>
             <div class="dropdown">
                 <a href="link.html"> PRIS </a>
                 <a href="brukervilkaar.html"> BRUKERVILKÅR </a>
             </div>
           </li>
           <li class="nav-link">
-            <a href="index.html">  <span> <i class="fa-regular fa-user" style="color:#444"></i> </span> LOG IN </a>
+            <a href="index.html"> LOG IN </a>
+          </li>
+          <li>
+            <button class="search-button">
+              <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </button>
           </li>
         </ul>
       </nav>
@@ -280,7 +282,7 @@
         <div class="container-wrapper">
           <div class="container">
             <span class="icon">
-              <i class="fa-solid fa-section fa-lg" style="color: rgb(212, 130, 130)"></i>
+              <i class="fa-solid fa-section fa-lg" style="color: rgb(211, 54, 54)"></i>
             </span>
             <h3> teori </h3>
             <p>
@@ -290,7 +292,7 @@
           </div>
           <div class="container">
             <span class="icon">
-              <i class="fa-solid fa-pencil fa-lg" style="color: rgb(97, 140, 220)"></i>
+              <i class="fa-solid fa-pencil fa-lg" style="color: rgb(57, 115, 223)"></i>
             </span>
             <h3> oppgavesamling </h3>
             <p>
@@ -351,35 +353,7 @@
             </div>
         </div>
     </footer>
-
-    <!-- JS start -->
-    <script>
-      // toggle-button navbar
-        const navbar = document.getElementsByClassName("nav-tabs")[0]
-        const navToggle = document.getElementsByClassName("toggle-button")[0]
-
-        navToggle.addEventListener("click", function() {
-            navbar.classList.toggle("active")
-        })
-
-        navToggle.addEventListener("click", function() {
-            navToggle.classList.toggle("selected")
-        })
-
-
-        // auto scroll with delay
-        // window.onload = function delayedAutoScroll() => {
-        //  var el = document.getElementsByClassName('services-info')
-             
-        // }
-
-        // let timer = setTimeout(delayedAutoScroll, 6000);
-
-
-        // BACKGROUND BUBBLES
-    </script>
-      </div>
-    </div>
-    
+    <!-- JAVASCRIPT -->
+    <script src="index.js"></script>
   </body>
 </html>
