@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Alle emner > Home </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
+    <style>
+        .frontpage {
+            border: red 1px solid;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column
+        }
+
+        #path {
+            margin: 1rem;
+
+            font-size: 1.25rem;
+
+            position: relative;
+            top: 1.25rem;
+            left: 0;
+        }
+
+        #textbox {
+            display: flex;
+            justify-content: center;
+
+            margin-top: 2rem;
+
+            /* border: green solid 1px; */
+        }
+
+        h1 {
+            position: relative;
+            bottom: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            margin: 2rem;
+
+            width: 80%;
+            height: fit-content;
+
+            /* border:blue solid 1px */
+        }
+
+        .container .subject {
+            margin: 1.5rem;
+
+            padding: 1rem;
+
+            min-width: 10rem;
+            min-height: 10rem;
+
+            /* grey subjects are inactive */
+            background: #ffffff;
+            box-shadow:  5px 5px 16px #8d8d8d,
+                        -5px -5px 16px #ffffff;
+
+            border-radius: 2rem;
+        }
+
+        .container .subject:hover {
+            background-color: rgb(140, 195, 2420, 0.2);
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        .button {
+            background-color: inherit;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #ffffff, #e6e6e6);
+            box-shadow:  6px 6px 12px #949494,
+                        -6px -6px 12px #ffffff;
+        }
+
+
+
+    </style>
+  </head>
+
+
+
+  <!-- START HOMEPAGE -->
+  <body> 
+    <!-- START header (logo, nav) -->
+    <header class="header">
+      <!-- LOGO img -->
+      <div class="logo-circle">
+          <div id="logo"> 
+            <p> P. </p>
+          </div>
+        </div>  
+
+      
+      <!-- toggle-button -->
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+
+      <!-- START navigation -->
+      <nav>
+        <ul class="nav-tabs">
+          <li class="nav-link">
+            <a href="index.html" > HOME </a>
+          </li>
+          <li class="nav-link">
+            <a href="allSubjects.html" class="selected"> EMNEOVERSIKT </a>
+            <div class="dropdown">
+                <a href="index.html"> OPPGAVESAMLING </a>
+                <!-- Arveplanlegger - testament, fremtidsfullmaklt og arvekalkulator? -->
+                <a href="index.html"> RESSURSER </a>
+            </div>
+          </li>
+
+          <li class="nav-link">
+            <a href="index.html">  </span> DIVERSE </a>
+            <div class="dropdown">
+                <a href="link.html"> PRIS </a>
+                <a href="brukervilkaar.html"> BRUKERVILKÅR </a>
+            </div>
+          </li>
+          <li class="nav-link">
+            <a href="index.html"> LOG IN </a>
+          </li>
+          <li>
+            <a href="#" class="searchIcon">
+              <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </a>
+            <input type="text" class="searchBar" oninput = "Search((this.value).toLowerCase())" placeholder = "Search...">
+          </li>
+        </ul>
+      </nav>
+      <!-- END navigation -->
+    </header>
+    <!-- END header -->
+
+
+    <!-- START content: title -->
+    <div id="path"> ./ emneoversikt </div>
+    <div class="frontpage">
+        <div id="textbox">
+          <h1> Emneoversikt</h1>  
+        </div>
+        <div class="container">
+            <div class="subject" id="random">
+                <h2> AVTALERETT </h2>
+                <a href="#" class="button"></a>
+            </div>
+            <div class="subject">
+                <h2> ARVERETT </h2>
+                <a href="#" class="button"></a>
+            </div>
+            <div class="subject">
+                <h2> ERSTATNINGSRETT </h2>
+                <a href="#" class="button"></a>
+            </div>
+            <div class="subject">
+                <h2> Ex.fac </h2>
+                <a href="#" class="button"></a>
+                </a>
+            </div>
+            <div class="subject">
+                <h2> FAMILIERETT </h2>
+                <a href="#" class="button"></a>
+            </div>
+            <div class="subject">
+                <h2> IMMATERIALRETT </h2>
+                <a href="#" class="button"></a>
+            </div>
+            <div class="subject">
+                <h2> JURIDISK METODE </h2>
+                <a href="#" class="button"></a>
+            </div>
+            <div class="subject">
+                <h2> TINGSRETT </h2>
+                <a href="#" class="button"></a>
+            </div>
+        </div>
+    </div>
+    <!-- END content: title -->
+
+
+
+    <!-- END homepage -->
+
+
+    <!-- START footer -->
+    <footer>
+      <div class="footer-grid">
+        <div class="section">
+          <h4> PRACTICUM </4>
+          <h5> by ISO </h5>
+        </div>
+        <div class="section">
+            <h4> Kontakt </h4>
+            <p> 981 15 209 </p>
+            <p> ISO.tande@gmail.com </p>
+            <p> Org.nr. xxx xxx xxx </p>
+          </div>
+          <div class="section">
+            <h4> Linker </h4>
+            <p> <a href="FAQ.html"> faq </a> </p>
+            <p> <a href="about.html"> about </a> </p>
+            <!-- <p> <a href="joinus.html"> Join us </a> </p> -->
+
+            <!-- Social media buttons -->
+            <br>
+            <div class ="frame">
+              <a href="#" class="btn">
+                <i class="fab fa-facebook-f" style="color: #3862bf;"></i>
+              </a>
+              <a href="#" class="btn">
+                <i class="fab fa-instagram" style="color: #c9347a;"></i>
+              </a>
+              <a href="#" class="btn">
+                <i class="fab fa-linkedin-in" style="color:#0b8ac5;"></i>
+              </a>
+              <a href="#" class="btn">
+                <i class="far fa-envelope"></i>
+              </a>
+            </div>
+        </div>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script src="index.js"></script>
+  </body>
+</html>
