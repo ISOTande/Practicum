@@ -67,12 +67,11 @@
       margin: 4rem auto 1rem auto;
       padding: 1rem 1.75rem;
 
-      border: none;
+      border: rgba(0, 0, 0, .04) 0.05px solid;
       border-radius: 4rem;
 
       width: fit-content;
 
-      background: #ffffff;
       color: #444;
       font-size: 1rem;
       letter-spacing: .2rem;
@@ -80,11 +79,12 @@
       outline: none;
       cursor: pointer;
       transition: .2s ease-in-out;
+
       box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
                   -6px -6px 10px rgba(255, 255, 255, .5),
                   6px 6px 8px rgba(255, 255, 255, .075),
                   6px 6px 10px rgba(0, 0, 0, .15);
-                  
+           
     }
 
     .button:hover {
@@ -136,7 +136,7 @@
   justify-content: center;
   align-items: center;
   text-align: justify;
-  padding: 0.75rem;
+  padding: 1.5rem;
 
   margin: 2rem;
 
@@ -144,22 +144,20 @@
 }
 
 .container:hover {
-  box-shadow:
-        -7px -7px 20px 0px #fff9,
-        -4px -4px 5px 0px #fff9,
-        7px 7px 20px 0px #0002,
-        4px 4px 5px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,
-        inset 0px 0px 0px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,
-        inset 0px 0px 0px 0px #0001;
+  box-shadow:  5px 5px 16px #8d8d8d,
+               -5px -5px 16px #ffffff;
+  
+  border: rgba(0, 0, 0, .05) 0.05px solid;
 }
+
 
 
 .icon {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
+
+  border: rgba(0, 0, 0, .04) 0.05px solid;
 
   margin: 0.5rem;
   padding: 0.25rem;
@@ -199,9 +197,9 @@
   }
 }
 
-
     </style>
   </head>
+
 
 
 
@@ -231,9 +229,8 @@
             <a href="index.html" class="selected"> HOME </a>
           </li>
           <li class="nav-link">
-            <a href="#"> EMNEOVERSIKT </a>
+            <a href="allSubjects.html"> EMNEOVERSIKT </a>
             <div class="dropdown">
-                <a href="index.html"> ALLE EMNER </a>
                 <a href="index.html"> OPPGAVESAMLING </a>
                 <!-- Arveplanlegger - testament, fremtidsfullmaklt og arvekalkulator? -->
                 <a href="index.html"> RESSURSER </a>
@@ -251,9 +248,9 @@
             <a href="index.html"> LOG IN </a>
           </li>
           <li>
-            <button class="search-button">
+            <a href="#" class="searchIcon">
               <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-            </button>
+            </a>
             <input type="text" class="searchBar" oninput = "Search((this.value).toLowerCase())" placeholder = "Search...">
           </li>
         </ul>
@@ -283,7 +280,7 @@
         <div class="container-wrapper">
           <div class="container">
             <span class="icon">
-              <i class="fa-solid fa-section fa-lg" style="color: rgb(211, 54, 54)"></i>
+              <i class="fa-solid fa-section fa-lg" style="color: rgb(238, 90, 90)"></i>
             </span>
             <h3> teori </h3>
             <p>
@@ -293,7 +290,7 @@
           </div>
           <div class="container">
             <span class="icon">
-              <i class="fa-solid fa-pencil fa-lg" style="color: rgb(57, 115, 223)"></i>
+              <i class="fa-solid fa-pencil fa-lg" style="color: rgb(104, 109, 255)"></i>
             </span>
             <h3> oppgavesamling </h3>
             <p>
@@ -303,7 +300,7 @@
           </div>
           <div class="container">
             <span class="icon">
-              <i class="fa-solid fa-folder-closed fa-lg" style="color: rgb(64, 129, 120)"></i>
+              <i class="fa-solid fa-folder-closed fa-lg" style="color: rgb(74, 201, 184)"></i>
             </span>
             <h3> ressurser </h3>
             <p>
@@ -340,13 +337,13 @@
             <br>
             <div class ="frame">
               <a href="#" class="btn">
-                <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+                <i class="fab fa-facebook-f" style="color: #3862bf;"></i>
               </a>
               <a href="#" class="btn">
-                <i class="fab fa-instagram" style="color: #d64dd6;"></i>
+                <i class="fab fa-instagram" style="color: #c9347a;"></i>
               </a>
               <a href="#" class="btn">
-                <i class="fab fa-linkedin-in" style="color:#0e76a8;"></i>
+                <i class="fab fa-linkedin-in" style="color:#0b8ac5;"></i>
               </a>
               <a href="#" class="btn">
                 <i class="far fa-envelope"></i>
