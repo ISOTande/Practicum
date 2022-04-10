@@ -4,11 +4,15 @@ const navToggle = document.getElementsByClassName("toggle-button")[0]
 
 navToggle.addEventListener("click", function() {
     navbar.classList.toggle("active")
-})
-
-navToggle.addEventListener("click", function() {
     navToggle.classList.toggle("selected")
 })
 
 
-// searchBar
+
+// SearchBar
+const searchIcon = document.getElementsByClassName("searchIcon")[0]
+const searchBar = document.getElementsByClassName("searchBar")[0]
+
+searchIcon.addEventListener("click", function() {
+    searchBar.classList.toggle("active")
+})
